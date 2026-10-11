@@ -31,7 +31,7 @@ export default function App() {
     // assets can get
     // convert to images path base 64 for convert pdf file html access to data
 
-    const urls = media.assets.map((result) => `data:image/jpeg;base64,${result.base64}`); // convert file path base64 string format
+    const urls = media.assets.map((result) => `data:image/*;base64,${result.base64}`); // convert file path base64 string format
 
 
     setAssets(urls);
@@ -70,7 +70,7 @@ export default function App() {
 
           // images url need to iterate img tag
 
-          const { uri } = await printToFileAsync({
+          const {uri} = await printToFileAsync({
             html:`<body>
             
             <div style="page-break-after:always;">
