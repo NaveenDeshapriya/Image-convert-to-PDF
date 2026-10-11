@@ -13,7 +13,7 @@ Image to PDF Convertor app developed by using Expo React Native.
 - Custom limitations
 
 
-## Require npm Package
+## Require npm Packages
 
 ```bash
   npx expo-image-picker
